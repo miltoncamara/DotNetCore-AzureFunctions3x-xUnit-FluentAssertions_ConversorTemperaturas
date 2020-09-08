@@ -38,7 +38,7 @@ stages:
     - task: DotNetCoreCLI@2
       inputs:
         command: 'test'
-        projects: 'ServerlessTemperatura.Testes/ServerlessTemperatura.Testes.csproj'
+        projects: '/ServerlessTemperatura.Testes/ServerlessTemperatura.Testes.csproj'
 
     - task: DotNetCoreCLI@2
       displayName: Build
