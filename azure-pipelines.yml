@@ -31,11 +31,13 @@ stages:
 
     steps:
     - task: DotNetCoreCLI@2
+      displayName: Build
       inputs:
         command: 'build'
         projects: '$(workingDirectory)/*.csproj'
 
     - task: DotNetCoreCLI@2
+      displayName: Teste
       inputs:
         command: 'test'
         projects: '/ServerlessTemperatura.Testes/ServerlessTemperatura.Testes.csproj'
